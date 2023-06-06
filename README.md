@@ -16,12 +16,11 @@ python SimilarNet_exp_(dataset).py (algorithm) (normalize)
 
 Each parameter should have one of the following values. Parameters follow the order.
 
+```
 dataset: MNIST, FMNIST, Omniglot, CIFAR, miniImageNet, MNIST-CIFAR
-
 algorithm: concat, SimilarNet, SimilarNetParametric
-
 normalize: True, False
-
+```
 
 For example, This script will run the model using SimilarNet with L2 normalize on Omniglot dataset.
 ```
@@ -36,5 +35,5 @@ python SimilarNet_exp_CIFAR.py concat False
 The result will be stored in ./models/(dataset) directory.
 
 # Success Rate Evaluation
-Run Check__result_Ratio-(dataset).ipynb on Jupyter notebook.
+Run Check_result_Ratio-(dataset).ipynb on Jupyter notebook.
 It will check the models and make .tag files containing positive/negative ratio and output values of models.
